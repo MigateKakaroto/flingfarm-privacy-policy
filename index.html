@@ -1,139 +1,211 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fling Farm - Política de Privacidade</title>
+    <title>Fling Farm - Privacy & Support</title>
 
-```
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f5f7fa;
-        margin: 0;
-        padding: 20px;
-        color: #333;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #e8f5e9, #f5f7fa);
+            color: #333;
+        }
 
-    .container {
-        max-width: 900px;
-        margin: auto;
-        background: white;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-    }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
 
-    h1 {
-        color: #2e7d32;
-        margin-bottom: 5px;
-    }
+        header {
+            background: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-    h2 {
-        color: #444;
-        margin-top: 30px;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
 
-    p, li {
-        line-height: 1.6;
-    }
+        .tabs {
+            display: flex;
+            background: #f1f1f1;
+        }
 
-    .footer {
-        margin-top: 40px;
-        padding-top: 20px;
-        border-top: 1px solid #ddd;
-        font-size: 14px;
-        color: #777;
-    }
-</style>
-```
+        .tab-button {
+            flex: 1;
+            padding: 15px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            border: none;
+            background: #f1f1f1;
+            transition: 0.3s;
+        }
 
+        .tab-button:hover {
+            background: #ddd;
+        }
+
+        .tab-button.active {
+            background: white;
+            border-bottom: 3px solid #2e7d32;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 25px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #2e7d32;
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        .email {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+    </style>
 </head>
+
 <body>
 
 <div class="container">
 
-```
-<h1>🐷 Fling Farm</h1>
-<p><strong>Política de Privacidade</strong></p>
+    <header>
+        <h1>🐷 Fling Farm</h1>
+        <p>Privacy Policy & Support Center</p>
+    </header>
 
-<p><strong>Última atualização:</strong> 01 de junho de 2026</p>
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab('privacy')">Privacy Policy</button>
+        <button class="tab-button" onclick="openTab('support')">Support</button>
+        <button class="tab-button" onclick="openTab('deletion')">Account Deletion</button>
+    </div>
 
-<p>
-    O Fling Farm respeita a privacidade de seus usuários e está comprometido
-    em proteger as informações coletadas durante o uso do aplicativo.
-</p>
+    <!-- PRIVACY -->
+    <div id="privacy" class="tab-content active">
+        <h2>Privacy Policy</h2>
+        <p>Last updated: June 2026</p>
 
-<h2>Informações Coletadas</h2>
+        <p>
+            Fling Farm respects your privacy and is committed to protecting your data.
+        </p>
 
-<p>O aplicativo pode coletar:</p>
+        <h3>Data Collected</h3>
+        <ul>
+            <li>Game progress and save data</li>
+            <li>Google account identifier (OAuth)</li>
+            <li>Technical device information</li>
+        </ul>
 
-<ul>
-    <li>Dados de progresso do jogador.</li>
-    <li>Identificadores necessários para salvar a conta.</li>
-    <li>Informações relacionadas a compras dentro do aplicativo.</li>
-    <li>Informações técnicas necessárias para o funcionamento do jogo.</li>
-</ul>
+        <h3>Third-party services</h3>
+        <ul>
+            <li>Supabase</li>
+            <li>Google Play Services</li>
+            <li>Google Play Billing</li>
+        </ul>
 
-<h2>Como Utilizamos os Dados</h2>
+        <h3>Data Usage</h3>
+        <ul>
+            <li>Save game progress</li>
+            <li>Sync account data</li>
+            <li>Improve game performance</li>
+        </ul>
 
-<p>Os dados podem ser utilizados para:</p>
+        <p><strong>We do not sell user data.</strong></p>
+    </div>
 
-<ul>
-    <li>Salvar o progresso do jogador.</li>
-    <li>Restaurar dados da conta.</li>
-    <li>Processar compras realizadas no aplicativo.</li>
-    <li>Melhorar a experiência de jogo.</li>
-    <li>Identificar e corrigir erros.</li>
-</ul>
+    <!-- SUPPORT -->
+    <div id="support" class="tab-content">
+        <h2>Support</h2>
 
-<h2>Serviços de Terceiros</h2>
+        <p>If you need help, contact us:</p>
 
-<p>O aplicativo pode utilizar serviços de terceiros, incluindo:</p>
+        <p class="email">
+            📧 felipelopes-98@hotmail.com
+        </p>
 
-<ul>
-    <li>Supabase</li>
-    <li>Google Play Services</li>
-    <li>Google Play Billing</li>
-    <li>• Google AdMob (quando aplicável)</li>
-</ul>
+        <h3>Common issues</h3>
+        <ul>
+            <li>Login problems (Google Sign-In)</li>
+            <li>Lost progress</li>
+            <li>Bugs or crashes</li>
+        </ul>
 
-<h2>Compartilhamento de Dados</h2>
+        <p>We usually respond within 48 hours.</p>
+    </div>
 
-<p>
-    Não vendemos informações pessoais dos usuários.
-</p>
+    <!-- ACCOUNT DELETION -->
+    <div id="deletion" class="tab-content">
+        <h2>Account & Data Deletion</h2>
 
-<h2>Segurança</h2>
+        <p>You can request deletion of your account and all associated data.</p>
 
-<p>
-    Adotamos medidas razoáveis para proteger os dados armazenados.
-</p>
+        <p><strong>How to request:</strong></p>
+        <p>Send an email to:</p>
 
-<h2>Crianças</h2>
+        <p class="email">
+            📧 felipelopes-98@hotmail.com
+        </p>
 
-<p>
-    O aplicativo não coleta intencionalmente informações pessoais de crianças
-    sem o consentimento dos responsáveis.
-</p>
+        <p>Please include the Google email used to log in.</p>
 
-<h2>Contato</h2>
+        <h3>Data that will be deleted</h3>
+        <ul>
+            <li>Google OAuth identifier</li>
+            <li>Game progress</li>
+            <li>Supabase user data</li>
+        </ul>
 
-<p>
-    Caso tenha dúvidas sobre esta Política de Privacidade, entre em contato:
-</p>
+        <h3>Retention</h3>
+        <p>Data is permanently deleted within 30 days unless required for legal/security reasons.</p>
+    </div>
 
-<p>
-    <strong>felipelopes-98@hotmail.com</strong>
-</p>
+    <footer>
+        © 2026 Fling Farm - All rights reserved
+    </footer>
 
-<div class="footer">
-    © 2026 Fling Farm. Todos os direitos reservados.
 </div>
-```
 
-</div>
+<script>
+function openTab(tabId) {
+    let contents = document.querySelectorAll(".tab-content");
+    let buttons = document.querySelectorAll(".tab-button");
+
+    contents.forEach(c => c.classList.remove("active"));
+    buttons.forEach(b => b.classList.remove("active"));
+
+    document.getElementById(tabId).classList.add("active");
+    event.target.classList.add("active");
+}
+</script>
 
 </body>
 </html>
